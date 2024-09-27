@@ -1,0 +1,47 @@
+type: edu
+files:
+  - name: src/client/Main.java
+    visible: true
+    learner_created: false
+  - name: src/server/Main.java
+    visible: true
+    learner_created: false
+  - name: test/JsonDatabaseTest.java
+    visible: false
+    learner_created: false
+  - name: src/client/directory/ThisIsAClass.java
+    visible: true
+    learner_created: true
+  - name: src/client/RequestArg.java
+    visible: true
+    learner_created: true
+  - name: src/client/delegates/RequestDelegate.java
+    visible: true
+    learner_created: true
+  - name: src/client/delegates/IndexDelegate.java
+    visible: true
+    learner_created: true
+  - name: src/client/delegates/ValueDelegate.java
+    visible: true
+    learner_created: true
+  - name: src/client/args/GetArgs.java
+    visible: true
+    learner_created: true
+  - name: src/client/args/SetArgs.java
+    visible: true
+    learner_created: true
+  - name: src/client/args/DeleteArgs.java
+    visible: true
+    learner_created: true
+  - name: src/client/args/Args.java
+    visible: true
+    learner_created: true
+  - name: src/client/args/ExitArgs.java
+    visible: true
+    learner_created: true
+feedback_link: https://hyperskill.org/learn/step/5492#comment
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Fri, 16 Aug 2024 19:02:59 UTC"
+record: 3

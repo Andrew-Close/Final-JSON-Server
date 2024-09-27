@@ -1,0 +1,26 @@
+type: edu
+files:
+  - name: src/client/Main.java
+    visible: true
+    learner_created: false
+  - name: src/server/Main.java
+    visible: true
+    learner_created: false
+  - name: test/JsonDatabaseTest.java
+    visible: false
+    learner_created: false
+feedback_link: https://hyperskill.org/learn/step/5491#comment
+status: Failed
+feedback:
+  message: |-
+    Wrong answer in test #1
+
+    Server output should be &#39;Server started!&#39; until a client connects!
+
+    Please find below the output of your program during this failed test.
+
+    ---
+
+    Hello, world!
+  time: "Sat, 07 Sep 2024 01:43:56 UTC"
+record: 2

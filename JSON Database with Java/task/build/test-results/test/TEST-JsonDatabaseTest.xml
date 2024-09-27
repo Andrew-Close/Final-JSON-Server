@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="JsonDatabaseTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-09-27T01:02:45" hostname="ACLOSECUSTOMPC" time="2.897">
+  <properties/>
+  <testcase name="start" classname="JsonDatabaseTest" time="2.897"/>
+  <system-out><![CDATA[?[1;31m
+Start test 1?[0m
+Server started!
+Client started!
+Sent: {"type":"exit"}
+Received: {"response":"OK"}
+?[1;31m
+Start test 2?[0m
+?[1;31m
+Start test 3?[0m
+Server started!
+Client started!
+Sent: {"type":"get","key":"text"}
+Received: {"response":"ERROR","reason":"No such key"}
+Client started!
+Sent: {"type":"set","key":"text","value":"Hello World!"}
+Received: {"response":"OK"}
+Client started!
+Sent: {"type":"get","key":"text"}
+Received: {"response":"OK","value":"Hello World!"}
+Client started!
+Sent: {"type":"delete","key":"text"}
+Received: {"response":"OK"}
+Client started!
+Sent: {"type":"delete","key":"text"}
+Received: {"response":"ERROR","reason":"No such key"}
+Client started!
+Sent: {"type":"get","key":"text"}
+Received: {"response":"ERROR","reason":"No such key"}
+Client started!
+Sent: {"type":"set","key":"person","value":{"name":"Elon Musk","car":{"model":"Tesla Roadster","year":"2018"},"rocket":{"name":"Falcon 9","launches":"87"}}}
+Received: {"response":"OK"}
+Client started!
+Sent: {"type":"get","key":["person","name"]}
+Received: {"response":"OK","value":"Elon Musk"}
+Client started!
+Sent: {"type":"set","key":["person","rocket","launches"],"value":"88"}
+Received: {"response":"OK"}
+Client started!
+Sent: {"type":"get","key":["person"]}
+Received: {"response":"OK","value":{"name":"Elon Musk","car":{"model":"Tesla Roadster","year":"2018"},"rocket":{"name":"Falcon 9","launches":"88"}}}
+Client started!
+Sent: {"type":"delete","key":["person","car","year"]}
+Received: {"response":"OK"}
+Client started!
+Sent: {"type":"get","key":["person"]}
+Received: {"response":"OK","value":{"name":"Elon Musk","car":{"model":"Tesla Roadster"},"rocket":{"name":"Falcon 9","launches":"88"}}}
+Client started!
+Sent: {"type":"exit"}
+Received: {"response":"OK"}
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

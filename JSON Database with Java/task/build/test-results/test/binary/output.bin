@@ -1,0 +1,50 @@
+[1;31m
+Start test 1[0m
+Server started!
+Client started!
+Sent: {"type":"exit"}
+Received: {"response":"OK"}
+[1;31m
+Start test 2[0m
+[1;31m
+Start test 3[0m
+Server started!
+Client started!
+#Sent: {"type":"get","key":"text"}
+7Received: {"response":"ERROR","reason":"No such key"}
+Client started!
+:Sent: {"type":"set","key":"text","value":"Hello World!"}
+Received: {"response":"OK"}
+Client started!
+#Sent: {"type":"get","key":"text"}
+4Received: {"response":"OK","value":"Hello World!"}
+Client started!
+&Sent: {"type":"delete","key":"text"}
+Received: {"response":"OK"}
+Client started!
+&Sent: {"type":"delete","key":"text"}
+7Received: {"response":"ERROR","reason":"No such key"}
+Client started!
+#Sent: {"type":"get","key":"text"}
+7Received: {"response":"ERROR","reason":"No such key"}
+Client started!
+žSent: {"type":"set","key":"person","value":{"name":"Elon Musk","car":{"model":"Tesla Roadster","year":"2018"},"rocket":{"name":"Falcon 9","launches":"87"}}}
+Received: {"response":"OK"}
+Client started!
+.Sent: {"type":"get","key":["person","name"]}
+1Received: {"response":"OK","value":"Elon Musk"}
+Client started!
+HSent: {"type":"set","key":["person","rocket","launches"],"value":"88"}
+Received: {"response":"OK"}
+Client started!
+'Sent: {"type":"get","key":["person"]}
+–Received: {"response":"OK","value":{"name":"Elon Musk","car":{"model":"Tesla Roadster","year":"2018"},"rocket":{"name":"Falcon 9","launches":"88"}}}
+Client started!
+7Sent: {"type":"delete","key":["person","car","year"]}
+Received: {"response":"OK"}
+Client started!
+'Sent: {"type":"get","key":["person"]}
+ˆReceived: {"response":"OK","value":{"name":"Elon Musk","car":{"model":"Tesla Roadster"},"rocket":{"name":"Falcon 9","launches":"88"}}}
+Client started!
+Sent: {"type":"exit"}
+Received: {"response":"OK"}

@@ -1,0 +1,62 @@
+type: edu
+files:
+  - name: src/client/Main.java
+    visible: true
+    learner_created: false
+  - name: src/server/Main.java
+    visible: true
+    learner_created: false
+  - name: test/JsonDatabaseTest.java
+    visible: false
+    learner_created: false
+  - name: test/JsonFinder.java
+    visible: false
+    learner_created: false
+  - name: test/JsonRequestBuilder.java
+    visible: false
+    learner_created: false
+  - name: src/server/ServerResponse.java
+    visible: true
+    learner_created: true
+  - name: src/client/args/SetArgs.java
+    visible: true
+    learner_created: true
+  - name: src/client/args/DeleteArgs.java
+    visible: true
+    learner_created: true
+  - name: src/server/JsonDatabase.java
+    visible: true
+    learner_created: true
+  - name: src/client/delegates/RequestDelegate.java
+    visible: true
+    learner_created: true
+  - name: src/client/args/GetArgs.java
+    visible: true
+    learner_created: true
+  - name: src/client/args/ExitArgs.java
+    visible: true
+    learner_created: true
+  - name: src/client/args/Args.java
+    visible: true
+    learner_created: true
+  - name: src/client/delegates/KeyDelegate.java
+    visible: true
+    learner_created: true
+  - name: src/client/data/request.json
+    visible: true
+    learner_created: true
+  - name: src/client/RequestArgs.java
+    visible: true
+    learner_created: true
+  - name: src/client/delegates/ValueDelegate.java
+    visible: true
+    learner_created: true
+  - name: src/server/data/db.json
+    visible: true
+    learner_created: true
+feedback_link: https://hyperskill.org/learn/step/5495#comment
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Fri, 27 Sep 2024 01:02:49 UTC"
+record: 6
